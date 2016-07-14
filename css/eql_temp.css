@@ -228,9 +228,11 @@ html, body {
 	  }
 
 
-	  .snBtn {
+		.snBtn {
 		  width:200px;
+			height: 20px;
 		  margin-left:-50px;
+			display: block;
 	  }
 
 	  .snBtn li {
@@ -305,3 +307,9 @@ html, body {
 		  bottom: 20px;
 		  }
 	  }
+		.copyright p{
+			text-align: center;
+		  color: #999;
+		  font-size:13px;
+			letter-spacing: 0.5px;
+		}

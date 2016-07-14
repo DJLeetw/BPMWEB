@@ -2,7 +2,7 @@
 font-family:'Palanquin','微軟正黑體', sans-serif;
 }
 
-#title2{
+#bpmfeature_title{
   font-size: 36px;
   text-align: center;
   margin-top: 80px;
@@ -31,7 +31,6 @@ text-align: center;
 }
 
 .title2_space{
-
 padding-bottom: 30px;
 
 }
