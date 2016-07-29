@@ -30,10 +30,21 @@ text-align: center;
 text-align: center;
 }
 
+#title2_p6_img{
+text-align: center;
+}
+
 .title2_space{
 padding-bottom: 30px;
-
 }
+.title2_space1{
+padding-bottom: 80px;
+}
+.title3_space1{
+padding-top: 30px;
+padding-bottom: 80px;
+}
+
 h3{
 color: white;
 font-size: 26px;
@@ -78,7 +89,7 @@ margin-right: : auto;
 
 th{
   color: #5B5B5B;
-  font-size: 18px;
+  font-size: 14px;
   font-weight:500;
   letter-spacing: 1px;
   line-height: 24px;
@@ -86,7 +97,7 @@ th{
 
 td{
   color: #5B5B5B;
-  font-size: 18px;
+  font-size: 14px;
   font-weight:300;
   letter-spacing: 1px;
   line-height: 24px;
