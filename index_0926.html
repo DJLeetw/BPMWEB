@@ -290,14 +290,33 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/jquery.lazyload.min.js"></script>
         <script>
+
         jQuery(document).ready(function($) {
-          $(function(){
-            $("img").lazyload({
-                  effect : "fadeIn"
-                  });
-                });
+            /*$(function(){
+              $("img").lazyload({
+              effect : "fadeIn"
               });
+            });
+        });*/
+
+            $(function() {
+                $("img.lazy").lazyload({
+                    event : "sporty"
+
+                });
+            });
+
+            $(window).bind("load", function() {
+                var timeout = setTimeout(function() {
+                    $("img.lazy").trigger("sporty")
+                }, 5000);
+            });
+
+
+        });
+
         </script>
+
 
         <script src="js/bootstrap.min.js"></script>
         <script>
