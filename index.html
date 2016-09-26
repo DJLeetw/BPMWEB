@@ -153,7 +153,7 @@
   </div>
 </section>
 <section class="bpmscreen">
-<img src="images/title3_bg.jpg" width="100%" class="img-responsive">
+<img src="images/loading.gif" data-original=“images/title3_bg.jpg” class=“lazy” width="100%" class="lazy img-responsive">
 </section>
 <section id="bpmspec" class="content-block content-3-7 title3_space1">
                     <div class="container">
@@ -288,7 +288,18 @@
         <div id="gotop">^<br>Top</div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+        <script>
+          jQuery(document).ready(function($) {
+            $(function(){
+              $("img.lazy").lazyload({
+                effect : "fadeIn"
+                });
+              });
+            });
+          </script>
+
         <script>
 		  $(window).scroll(function(){
 		  var win_h = $(document).scrollTop();
