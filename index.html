@@ -1,13 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class=" is-copy-enabled is-u2f-enabled">
-  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+<html lang="en">
+    <head>
         <meta charset="utf-8">
-            <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-4a5c7916bfb3223d1960676d72c09227ca0125f101d75b915eaba2df57516f4c.css" integrity="sha256-Slx5Fr+zIj0ZYGdtcsCSJ8oBJfEB11uRXqui31dRb0w=" media="all" rel="stylesheet" />
-            <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-f8ae36ef6dcd4dbee8fc0972f69497f219ae732f28e359fc93b17f4b79763b7e.css" integrity="sha256-+K42723NTb7o/Aly9pSX8hmucy8o41n8k7F/S3l2O34=" media="all" rel="stylesheet" />
-            <link as="script" href="https://assets-cdn.github.com/assets/frameworks-2c76cc192ef357ffd1604a67307c1426cfd7513a720b1a87d1f53eb24a928308.js" rel="preload" />
-            <link as="script" href="https://assets-cdn.github.com/assets/github-007f74e81f6b2ee6f476a85157fa55fb4ef360cc352d63f70ecbe068870bb0f5.js" rel="preload" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="Content-Language" content="en">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="EQL brings you an easier and smarter lifestyle">
         <link rel="shortcut icon" href="images/favicon.ico" />
@@ -113,6 +108,7 @@
     <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"><span class="sr-only">Next</span></a>
 </div>
 <!--// End Carousel -->
+<!--舊版 IE 警告 -->        <!--[if lte IE 8]>        <script>alert("您現在所使用的是IE 8瀏覽器或更舊的版本，本網站已不支援舊型瀏覽器。為了提供您更好的瀏覽體驗，建議您更新軟體。 Sorry, your browser is no longer support. Please update latest version of your browser.");</script>        <H4 style="text-align:center; color:red;"><br>您現在所使用的是IE 8瀏覽器或更舊的版本，本網站已不支援舊型瀏覽器。為了提供您更好的瀏覽體驗，建議您更新軟體。</h4>        <H4 style="text-align:center; color:red;">Sorry, your browser is no longer support. Please upgrade latest version of your browser.</h4>        <![endif]-->
 
   <!--Feature-->
 <section id="bpmfeature" style="background-color:#00C0F3">
@@ -158,7 +154,7 @@
   </div>
 </section>
 <section class="bpmscreen">
-<img src="images/loading.gif" data-original="images/title3_bg.jpg" width="50px" class="img-responsive lazy center-block" style="display:block;">
+<img src="images/loading.gif" data-original="images/title3_bg.jpg" class="center-block img-responsive lazy">
 </section>
 <section id="bpmspec" class="content-block content-3-7 title3_space1">
                     <div class="container">
@@ -291,19 +287,18 @@
                         </footer>
 
         <div id="gotop">^<br>Top</div>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="js/jquery.lazyload.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.lazyload.min.js"></script>
         <script>
-jQuery(document).ready(function($) {
-$(function(){
-$("img").lazyload({
-effect : "fadeIn"
-});
-});
-});
-</script>
+        jQuery(document).ready(function($) {
+          $(function(){
+            $("img.lazy").lazyload({
+              effect : "fadeIn"
+                              });
+                       });
+                                            });
+        </script>
         <script>
 		  $(window).scroll(function(){
 		  var win_h = $(document).scrollTop();
