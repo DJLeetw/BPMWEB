@@ -287,37 +287,45 @@
                         </footer>
 
         <div id="gotop">^<br>Top</div>
-        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-        <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.lazyload.min.js"></script>
         <script>
-
-        jQuery(document).ready(function($) {
-            /*$(function(){
-              $("img").lazyload({
-              effect : "fadeIn"
-              });
-            });
-        });*/
-
-            $(function() {
-                $("img.lazy").lazyload({
-                    event : "sporty"
-
+    /*    jQuery(document).ready(function($) {
+          $(function(){
+            $("img").lazyload({
+                  effect : "fadeIn"
+                  });
                 });
-            });
-
-            $(window).bind("load", function() {
-                var timeout = setTimeout(function() {
-                    $("img.lazy").trigger("sporty")
-                }, 5000);
-            });
+              });*/
 
 
-        });
+              jQuery(document).ready(function($) {
+                  /*$(function(){
+                    $("img").lazyload({
+                    effect : "fadeIn"
+                    });
+                  });
+              });*/
 
+                  $(function() {
+                      $("img.lazy").lazyload({
+                          event : "sporty"
+
+                      });
+                  });
+
+                  $(window).bind("load", function() {
+                      var timeout = setTimeout(function() {
+                          $("img.lazy").trigger("sporty")
+                      }, 5000);
+                  });
+
+
+              });
         </script>
 
-        <script src="js/bootstrap.min.js"></script>
+
         <script>
 		  $(window).scroll(function(){
 		  var win_h = $(document).scrollTop();
